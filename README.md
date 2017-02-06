@@ -1,31 +1,37 @@
 
 
+Madoko for both local or online live editing 
+
+
+[Madoko](https://www.madoko.net/) is a simple format to write advanced and beautiful document
+
+
 installation
 ==============
 
-il faut installer 
+you have to install 
 
-- node, qui vient avec `npm`
-- faire `npm install`
-- faire `npm install madoko -g`
+- node, which comes with `npm`
+- from the project directory do `npm install` (this installs the dependencies described in `package.json`)
+- issue `npm install madoko -g` to install madoko proper globally
 
 
 utilisation
 ============
 
 
-- faire `cd document`
-- lancer `madoko document.mdk` manuellement (ignorer les erreurs sur dvisvgm)
+- from the `document` directory 
+- run `madoko document.mdk` manually (ignore possible errors on dvisvgm..)
 
 
-pour avoir une mise a jour automatique
-- a partir de la racine du projet, lancer `node livereload.js`
-- installer [stack](https://docs.haskellstack.org/en/stable/README/)
-- faire 'stack install steeloverseer'
-- a partir de document lancer `sos`
+to have automatic update :
+- from the project root, run `node livereload.js`
+- install [stack](https://docs.haskellstack.org/en/stable/README/)
+- run 'stack install steeloverseer'
+- from the `document` folder run `sos`
 
-le document affiche dans le browser devrait se rafraichir automatiquement
+now the document displayed in the browser should update automatically
 
 
 FAQ:
-- si les figures sont incompletes, il faut enlever `dvisvgm` du path pour forcer Madoko a faire du rendu en png et non svg
+- if images are incompletes, one has to remove `dvisvgm` from the path to force Madoko to use png and not svg
