@@ -1,0 +1,3 @@
+- pattern: (.*)\.mdk
+  commands:
+  - madoko -v \0 

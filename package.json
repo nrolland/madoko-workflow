@@ -1,0 +1,7 @@
+{
+  "name": "madokotest",
+  "version": "1.0.0",
+  "dependencies": {
+    "livereload": "^0.3.7"
+  }
+}
